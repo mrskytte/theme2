@@ -5,8 +5,8 @@ let onejump =
 onejump.addEventListener("click",startJump);
 
 function startJump(){
-    img.classList.toggle("onejump")
-    console.log(img)
+    img.classList.toggle("onejump");
+    console.log(img);
 }
 
 
@@ -15,8 +15,8 @@ let jumping =
 jumping.addEventListener("click",startJumping);
 
 function startJumping(){
-    img.classList.toggle("jumping")
-    console.log(img)
+    img.classList.toggle("jumping");
+    console.log(img);
 }
 
 let moveit =
@@ -24,9 +24,7 @@ let moveit =
 moveit.addEventListener("click",startMoveit);
 
 function startMoveit(){
-    img.classList.toggle("moveit")
-    img.classList.remove("moveto30")
-    img.classList.remove("movefrom30")
+    img.classList.toggle("moveit");
     console.log(img)
 }
 
@@ -35,17 +33,17 @@ let moveto30 =
 moveto30.addEventListener("click",startMoveto30);
 
 function startMoveto30(){
-    img.classList.toggle("moveto30")
-    console.log(img)
+    img.classList.toggle("moveto30");
+    console.log(img);
 }
 
 let movefrom30 =
     document.querySelector("#movefrom30");
-movefrom30.addEventListener("click",startMovefrom30);
+movefrom30.addEventListener("click",startMovefrom30;
 
 function startMovefrom30(){
-    img.classList.toggle("movefrom30")
-    console.log(img)
+    img.classList.toggle("movefrom30");
+    console.log(img);
 }
 
 let fade =
@@ -53,8 +51,8 @@ let fade =
 fade.addEventListener("click",startFade);
 
 function startFade(){
-    img.classList.toggle("fade")
-    console.log(img)
+    img.classList.toggle("fade");
+    console.log(img);
 }
 
 let glow =
@@ -62,8 +60,8 @@ let glow =
 glow.addEventListener("click",startGlow);
 
 function startGlow(){
-    img.classList.toggle("glow")
-    console.log(img)
+    img.classList.toggle("glow");
+    console.log(img);
 }
 
 let shot =
@@ -71,8 +69,8 @@ let shot =
 shot.addEventListener("click",startShot);
 
 function startShot(){
-    img.classList.toggle("shot")
-    console.log(img)
+    img.classList.toggle("shot");
+    console.log(img);
 }
 
 let shake =
@@ -80,8 +78,8 @@ let shake =
 shake.addEventListener("click",startShake);
 
 function startShake(){
-    img.classList.toggle("shake")
-    console.log(img)
+    img.classList.toggle("shake");
+    console.log(img);
 }
 
 let grow =
@@ -89,6 +87,15 @@ let grow =
 grow.addEventListener("click",startGrow);
 
 function startGrow(){
-    img.classList.toggle("grow")
-    console.log(img)
+    img.classList.toggle("grow");
+    console.log(img);
+}
+
+let stop =
+    document.querySelector("#stop");
+stop.addEventListener("click", stopall);
+
+function stopall(){
+    img.className=" ";
+    console.log(img);
 }
