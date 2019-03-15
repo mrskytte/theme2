@@ -1,95 +1,90 @@
-let img = document.querySelector("#img");
+const img = document.querySelector("#img");
+let currentAnimation = "";
+
+function startAnimation(kindOfAnimation){
+    if (currentAnimation == kindOfAnimation) {
+        img.classList.toggle(kindOfAnimation);
+        console.log(img)
+    } else {
+        img.setAttribute("class", "img")
+        img.classList.toggle(kindOfAnimation);
+        currentAnimation = kindOfAnimation;
+        console.log("Current animation is: " + currentAnimation)
+        console.log(img)
+    }
+}
 
 let onejump =
     document.querySelector("#onejump");
-onejump.addEventListener("click",startJump);
 
-function startJump(){
-    img.classList.toggle("onejump");
-    console.log(img);
-}
+onejump.addEventListener("click", function () {
+    startAnimation("onejump")
+})
+
 
 
 let jumping =
     document.querySelector("#jumping");
-jumping.addEventListener("click",startJumping);
 
-function startJumping(){
-    img.classList.toggle("jumping");
-    console.log(img);
-}
+jumping.addEventListener("click", function () {
+    startAnimation("jumping")
+})
 
 let moveit =
     document.querySelector("#moveit");
-moveit.addEventListener("click",startMoveit);
 
-function startMoveit(){
-    img.classList.toggle("moveit");
-    console.log(img)
-}
+moveit.addEventListener("click", function () {
+    startAnimation("moveit")
+})
 
 let moveto30 =
     document.querySelector("#moveto30");
-moveto30.addEventListener("click",startMoveto30);
 
-function startMoveto30(){
-    img.classList.toggle("moveto30");
-    console.log(img);
-}
+moveto30.addEventListener("click", function () {
+    startAnimation("moveto30")
+})
 
 let movefrom30 =
     document.querySelector("#movefrom30");
-movefrom30.addEventListener("click",startMovefrom30;
 
-function startMovefrom30(){
-    img.classList.toggle("movefrom30");
-    console.log(img);
-}
+movefrom30.addEventListener("click", function () {
+    startAnimation("movefrom30")
+})
 
 let fade =
     document.querySelector("#fade");
-fade.addEventListener("click",startFade);
 
-function startFade(){
-    img.classList.toggle("fade");
-    console.log(img);
-}
+fade.addEventListener("click", function () {
+    startAnimation("fade")
+})
 
 let glow =
     document.querySelector("#glow");
-glow.addEventListener("click",startGlow);
 
-function startGlow(){
-    img.classList.toggle("glow");
-    console.log(img);
-}
+glow.addEventListener("click", function () {
+    startAnimation("glow")
+})
 
 let shot =
     document.querySelector("#shot");
-shot.addEventListener("click",startShot);
 
-function startShot(){
-    img.classList.toggle("shot");
-    console.log(img);
-}
+shot.addEventListener("click", function () {
+    startAnimation("shot")
+})
 
 let shake =
     document.querySelector("#shake");
-shake.addEventListener("click",startShake);
 
-function startShake(){
-    img.classList.toggle("shake");
-    console.log(img);
-}
+shake.addEventListener("click", function () {
+    startAnimation("shake")
+})
 
 let grow =
     document.querySelector("#grow");
-grow.addEventListener("click",startGrow);
 
-function startGrow(){
-    img.classList.toggle("grow");
-    console.log(img);
-}
+grow.addEventListener("click", function () {
+    startAnimation("grow")
+})
 
 let stop =
     document.querySelector("#stop");

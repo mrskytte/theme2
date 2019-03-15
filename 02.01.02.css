@@ -15,18 +15,29 @@ img {
 }
 
 .onejump {
-    animation: onejump 2s;
+    animation: onejump 2s forwards;
 }
 
 @keyframes onejump {
     50% {
-        transform: translate(0, -30vh)
+        transform: translate(0, -30vh);
+    }
+    100%{
+        transform: translate(0, 0)
     }
 }
 
 .jumping {
-    animation: onejump 2s infinite;
+    animation: jumping 2s infinite;
     animation-play-state: running
+}
+@keyframes jumping {
+    50% {
+        transform: translate(0, -30vh);
+    }
+    100%{
+        transform: translate(0, 0)
+    }
 }
 
 .moveit {
